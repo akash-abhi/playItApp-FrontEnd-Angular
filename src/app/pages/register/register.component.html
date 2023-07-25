@@ -1,0 +1,46 @@
+<div class="main-div">
+
+    <mat-card>
+        <mat-card-content>
+            <div class="container">
+                <h1>Register Here :)</h1>
+
+                <form (ngSubmit)="register()">
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>First Name</mat-label>
+                        <input [(ngModel)]="person.firstname" name="email" matInput placeholder="Enter First Name">
+                    </mat-form-field>
+                    
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>Last Name</mat-label>
+                        <input [(ngModel)]="person.lastname" name="email" matInput placeholder="Enter Last Name">
+                    </mat-form-field>
+                    <br/>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Enter Email</mat-label>
+                        <input [(ngModel)]="person.email" name="email" matInput placeholder="Enter Email">
+                    </mat-form-field>
+                    
+                    <mat-form-field appearance="outline">
+                        <mat-label>Enter Password</mat-label>
+                        <input [(ngModel)]="person.password" name="password" type="password" matInput placeholder="Enter Password">
+                    </mat-form-field>
+                    <br/>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Phone no.</mat-label>
+                        <input [(ngModel)]="person.phoneno" name="email" matInput placeholder="Enter Phone no.">
+                    </mat-form-field>
+                    <br/>
+                    <div>
+                        <button type="submit" mat-raised-button color="primary">Register</button>
+                        <button routerLink="/login" type="button" mat-flat-button >Already Registered Click Here</button>
+                    </div>
+
+                </form>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+</div>
